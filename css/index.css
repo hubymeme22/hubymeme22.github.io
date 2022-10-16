@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+    font-family: 'Roboto Mono', 'Ubuntu Mono', 'Consolas', 'Sans-serif';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(28, 23, 44);
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
+    margin-top: 100px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+}
+
+button, img {
+    cursor: pointer;
+}
+
+section {
+    margin-left: 15%;
+    text-align: justify;
+    max-width: 70%;
+    min-width: calc(15% - 300px);
+    padding-top: 200px;
+    margin-top: 100px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+
+button.common-button-style {
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+
+/* INTRO PART!! */
+section.intro {
+    text-align: center ;
+    max-width: 100%;
+    margin-left: 0;
+    padding-top: 0px;
+}
+
+section.intro img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+section.intro button:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    color: black;
+}
+
+div.blink {
+    height: 12px;
+    width: 5px;
+    display: inline-block;
+    border: 1px solid white;
+    transition: 0s;
+}
+
+
+/* ABOUT ME PART!! */
+section.aboutme img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+section.aboutme button:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    color: black;
+}
+
+
+/* TECHSTACK PART!!! */
+section.techstack div.ts-container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: black; */
+}
+
+section.techstack div.ts-container img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+section.techstack div.ts-container img:hover {
+    height: 120px;
+    width: 120px;
+    transform: translateY(-10px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
