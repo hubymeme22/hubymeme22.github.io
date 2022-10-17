@@ -18,10 +18,27 @@
     }
 }
 
+@keyframes point-down {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    } 50% {
+        transform: translateY(5px);
+        opacity: 0.5;
+    } 100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .insert {
     animation: insert-from-left 2s forwards;
 }
 
 .remove {
     animation: remove-to-left 2s forwards;
+}
+
+.point-down {
+    animation: point-down 2s infinite;
 }

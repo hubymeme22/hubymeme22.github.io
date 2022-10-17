@@ -2,6 +2,7 @@
 const intro = document.getElementById('intro');
 const aboutme = document.getElementById('aboutme');
 const techstack = document.getElementById('techstack');
+const jeez_arrows = document.getElementsByClassName('arrow-container');
 
 const observer = new IntersectionObserver((entries) => {
     const element = entries[0].target;
@@ -20,6 +21,11 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(intro);
 observer.observe(aboutme);
 observer.observe(techstack);
+
+for (let i = 0; i < jeez_arrows.length; i++) {
+    console.log(i);
+    observer.observe(jeez_arrows[i]);
+}
 
 // animation for text cursor
 const tcursor = document.getElementById('text-cursor');
