@@ -1,4 +1,5 @@
 section.terminal div.terminal-bg {
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 20px;
@@ -7,7 +8,9 @@ section.terminal div.terminal-bg {
 
 section.terminal div.terminal-shadow-container {
     border-radius: 20px;
-    box-shadow: 3px 2px 15px 5px rgba(225, 9, 232, 0.486);
+    box-shadow: 0px 0px 15px 3px rgba(225, 9, 232, 0.486);
+    transition: 1s;
+    cursor: pointer;
 }
 
 section.terminal div.terminal-bg div.header-design {
@@ -20,4 +23,11 @@ section.terminal div.terminal-bg div.header-design {
 
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+
+/* HOVER EFFECT FOR THE WHOLE TERMINAL */
+section.terminal div.terminal-shadow-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px 3px rgba(225, 9, 232, 0.486);
 }
