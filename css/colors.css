@@ -1,3 +1,4 @@
+/* TEXT COLORS */
 .red {
     color: red;
 }
@@ -12,4 +13,13 @@
 
 .yellow {
     color: yellow;
+}
+
+/* BACKGROUND COLORS */
+.bg-white {
+    background-color: white;
+}
+
+.bg-transparent {
+    background-color: transparent;
 }

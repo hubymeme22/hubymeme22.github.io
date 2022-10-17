@@ -45,9 +45,7 @@ section {
     text-align: justify;
     max-width: 70%;
     min-width: calc(15% - 300px);
-    padding-top: 200px;
-    margin-top: 100px;
-    /* background-color: rgba(0, 0, 0, 0.3); */
+    padding-top: 100px;
 }
 
 
@@ -65,6 +63,7 @@ section.intro {
     text-align: center ;
     max-width: 100%;
     margin-left: 0;
+    margin-top: 0px;
     padding-top: 0px;
 }
 
@@ -130,4 +129,9 @@ section.techstack div.ts-container img:hover {
     transform: translateY(-10px);
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+/* TINATAMAD AKO!! HETO SEPARATOR */
+div.separator {
+    height: 400px;
 }
