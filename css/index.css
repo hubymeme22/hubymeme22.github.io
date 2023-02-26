@@ -1,164 +1,120 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
 * {
-    font-family: 'Roboto Mono', 'Ubuntu Mono', 'Consolas', 'Sans-serif';
-    scroll-behavior: smooth;
+    font-family: Consolas;
+    color: white;
 }
 
 body {
-    background-color: rgb(28, 23, 44);
-    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+h1, h2, h3, p.header {
+    color: black;
+    margin: 0px;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-main {
-    margin-top: 100px;
-}
-
-footer {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-
+    padding: 10px;
+    width: calc(100% - 20px);
+    top: 0; left: 0;
     position: absolute;
-    left: 0;
-}
-
-button, img {
-    cursor: pointer;
+    background-color: white;
 }
 
 section {
-    margin-left: 15%;
-    text-align: justify;
-    max-width: 70%;
-    min-width: calc(15% - 300px);
-    padding-top: 100px;
+    margin-top: calc(1em + 30px);
 }
 
+button {
+    cursor: pointer;
+}
 
-button.common-button-style {
-    padding: 20px;
-    color: white;
+button.classic-button-style {
+    border: 2px dashed white;
     background-color: transparent;
-    border: 1px solid white;
-    transition: 1s;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    animation: blink 2s infinite;
+    transition: 2s;
 }
 
-
-/* INTRO PART!! */
-section.intro {
-    text-align: center ;
-    max-width: 100%;
-    margin-left: 0;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-section.intro img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-section.intro button:hover {
-    padding-left: 40px;
-    padding-right: 40px;
+button.classic-button-style:hover {
+    border: 2px dashed black;
     background-color: white;
     color: black;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-div.blink {
-    height: 12px;
-    width: 5px;
+span.holder {
     display: inline-block;
-    border: 1px solid white;
-    transition: 0s;
 }
 
-
-/* ABOUT ME PART!! */
-section.aboutme img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+b.typing {
+    display: inline-block;
+    height: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: elongate 0.8s forwards;
 }
 
-section.aboutme button:hover {
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: white;
-    color: black;
+b.term-user {
+    color: rgb(9, 181, 9);
 }
 
-
-/* TECHSTACK PART!!! */
-section.techstack div.ts-container {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* background-color: black; */
+b.term-host {
+    color: rgb(187, 0, 255);
 }
 
-section.techstack div.ts-container img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px;
-    transition: 1s;
+b.blinking {
+    height: 1em;
+    border-right: 2px solid white;
+    animation: bblink 0.5s infinite;
 }
 
-section.techstack div.ts-container img:hover {
-    height: 120px;
-    width: 120px;
-    transform: translateY(-10px);
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-/* TINATAMAD AKO!! HETO SEPARATOR */
-div.separator {
-    height: 400px;
-}
-
-
-/* MGA ARROW NA DESIGN!!! */
-div.arrow-container {
-    width: 100%;
-    /* background-color: black; */
+.text-center {
     text-align: center;
 }
 
-div.arrow-container div.body {
-    display: inline-block;
-    height: 10px;
-    width: 1px;
-    margin: 0px;
-    border-radius: 5px;
-    background-color: white;
+#introduction {
+    text-align: center;
 }
 
-div.arrow-container div.arrow {
-    display: inline-block;
-    height: 0; width: 0;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-top: 7px solid white;
+#ascii-art {
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+}
+
+
+/******************
+*    ANIMATIONS   *
+*******************/
+
+@keyframes blink {
+    0% {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    25% {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    100% {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@keyframes bblink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes elongate {
+    0% { width: 0.5em; }
+    100% { width: 3.5em; }
 }

@@ -1,127 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/terminal.css">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/colors.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="icon" href="favicon.png">
-	<script src="js/animations.js" defer></script>
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
-	<main>
-		<section id="intro" class="intro">
-			<img src="images/profile.webp">
-			<p class="h1">Hubert F. Espinola I</p>
-			<p class="normal">
-				3rd Year BSCS - Batangas State University
-				<br>
-				Calamba City, Laguna, Philippines
-				<br>
-				<br>
-			</p>
+    <main>
+        <header>
+            <p class="header">hubert-portfolio.exe - v.2.0.0</p>
+        </header>
 
-			<b id="anim" class="green">Learns, sleeps a lot, eats a lot.<div id="text-cursor" class="blink"></div></p></b>
-			<br>
-			<a href="#aboutme"><button class="common-button-style" id="abtmebtn">About Me</button></a>
-		</section>
-		<br>
+        <section id="introduction">
+            <pre class="ascii-art-container" id="ascii-art"></pre>
+            <p class="text-center"><b>[ Love the Koalas (art by: Joan G. Stark) ]</b></p>
+            <p class="text-center">Hubert F. Espinola I | BSCS | Batangas State University</p>
+            <p class="text-center">Back-end Developer | Average AI and CyberSecurity Enjoyer</p>
+            <br><br>
+            <button class="classic-button-style" id="aboutme">About Me</button>
+        </section>
 
-		<div class="arrow-container insert" id="next_1">
-			<div class="body"></div><br>
-			<div class="body"></div><br>
-			<div class="body"></div><br>
-			<div class="arrow point-down"></div>
-		</div>
+        <section id="about-me" hidden>
+            <br>
+            <span>
+                <span class="holder"><b class="term-user">HueHueberry</b><b>@</b><b class="term-host">127.0.0.1</b><b>~#</b></span>
+                <b class="typing">whoami</b><b class="blinking"></b>
+            </span>
+            <br><br>
 
-		<div class="separator"></div>
-		<section id="aboutme" class="aboutme terminal">
-			<div class="terminal-shadow-container shadow-white">
-				<div class="terminal-bg">
-				<div class="header-design"></div>
-
-				<p class="h1">ABOUT ME</p>
-				<p class="h2 green">Back-end Developer</p>
-				<p class="normal yellow">3rd Year Student - BS Computer Science</p>	
-				<br>
-				<p class="normal">
-					My interests are <b class="red">security research</b>, <b class="green">AI</b>, <b class="green">algorithms</b>, building <b class="yellow">APIs</b>, and others that are related to problem solving.
-					Although I am not as good as the big mathematicians, logicians, and other experienced computer scientists out there,
-					I'm pretty confident that I can learn pretty much anything related to this field (well, depends on given time) :>
-					<br><br>
-					Most of my experiences are "google-article-youtube-indian-guy-taught" or "self-taught," and I really did enjoy the process.
-					I started focusing on cybersecurity back in junior high, mostly related to making reverse shells, trojans, and finding XSS injection vulnerabilities for pranks.
-					I soon became interested in mathematics and physics which lead to my interests in AI and problem solving.
-				</p>
-				<br><br>
-
-				<a href="#techstack"><button class="common-button-style">continue</button></a>
-			</div>
-			</div>
-		</section>
-		<br>
-
-		<div class="arrow-container insert">
-			<div class="body"></div><br>
-			<div class="body"></div><br>
-			<div class="body"></div><br>
-			<div class="arrow point-down"></div>
-		</div>
-
-		<div class="separator"></div>
-		<section id="techstack" class="techstack terminal">
-			<div class="terminal-shadow-container shadow-blue">
-			<div class="terminal-bg">
-				<div class="header-design"></div>
-				<p class="h1">Technologies used</p>
-				<p class="normal">Below are the tools I have used for building projects.</p>
-				<br><br>
-
-				<p class="h2 red">Database</p>
-				<br>
-				<div class="ts-container">
-					<img src="images/icons8-mariadb-144.png" alt="sheesh">
-					<img src="images/icons8-my-sql-144.png">
-					<img src="images/icons8-mongodb-144.png">
-				</div>
-
-				<br><br>
-				<p class="h2 green">Programming Language</p>
-				<br>
-				<div class="ts-container">
-					<img src="images/icons8-python-144.png">
-					<img src="images/icons8-javascript-144.png" alt="">
-					<img src="images/icons8-typescript-144.png" alt="">
-					<img src="images/Clang.png">
-					<img src="images/C++.png" alt="">
-				</div>
-				<br>
-
-				<br><br>
-				<p class="h2 yellow">Techs/Frameworks</p>
-				<br>
-				<div class="ts-container">
-					<img src="images/icons8-node-js-144.png">
-					<img src="images/icons8-flask-150.png">
-				</div>
-				<br>
-			</div>
-			</div>
-		</section>
-		<section></section>
-		<div style="text-align: center">
-			<h1>U N D E R</h1>
-			<img src="images/natsu.gif" height="200px" width="200px">
-			<h1>D E V E L O P M E N T</h1>
-			<h1>H E H E Z</h1>
-			<br> <br><br>
-		</div>
-	</main>
-	<footer>Copyright@2022 HueHueberry</footer>
+            <div class="info-container">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
