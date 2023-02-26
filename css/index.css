@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
 * {
-    font-family: Consolas;
+    font-family: 'Ubuntu Mono', Consolas, monospace;
     color: white;
 }
 
