@@ -1,3 +1,5 @@
+import triggerAboutMe from "./aboutme.js";
+
 const asciiArt = `
 __                      __
 .-'  \`'.._...-----..._..-'\`  '-.
@@ -29,4 +31,6 @@ aboutme.onclick = () => {
         else
             element.hidden = false;
     });
+
+    triggerAboutMe();
 }

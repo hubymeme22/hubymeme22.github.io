@@ -45,8 +45,19 @@ button.classic-button-style:hover {
     border: 2px dashed black;
     background-color: white;
     color: black;
+    font-size: 1.1em;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+div.infocontainer {
+    width: 95%;
+    margin-left: 5%;
+    /* background-color: white; */
+}
+
+div.infocontainer > pre {
+    font-size: 1.1em;
 }
 
 span.holder {
@@ -75,18 +86,30 @@ b.blinking {
     animation: bblink 0.5s infinite;
 }
 
-.text-center {
-    text-align: center;
-}
+.text-center { text-align: center; }
+.yellow { color: yellow; }
+.green { color: limegreen; }
 
 #introduction {
     text-align: center;
+    font-size: 1.1em;
 }
 
 #ascii-art {
     width: 100%;
     text-align: center;
     font-size: 15pt;
+}
+
+@media only screen and (max-width: 600px) {
+    div.infocontainer {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    div.infocontainer > pre {
+        font-size: 10pt;
+    }
 }
 
 
