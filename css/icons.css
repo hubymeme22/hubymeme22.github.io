@@ -1,0 +1,34 @@
+a.fa {
+    cursor: pointer;
+    padding: 8px;
+    width: 10px;
+    border-radius: 50%;
+    font-size: 8pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.fa:hover {
+    background-color: black;
+    color: white;
+}
+
+a.fa-linkedin {
+    background-color: #3B5998;
+    color: white;
+}
+
+a.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+a.fa-instagram {
+    background: #c45c2c;
+    color: white;
+}
+
+a.fa-github {
+    background-color: white;
+    color: black;
+}
