@@ -1,0 +1,63 @@
+/*
+    This file includes design for each project cards
+*/
+
+div.card-holder {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+div.project-card {
+    height: 18rem;
+    width: 20rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+}
+
+div.project-card > h2 {
+    color: rgb(35, 207, 35);
+}
+
+div.project-card > div.defcontainer {
+    height: 10rem;
+    width: calc(100% - 1rem);
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+div.project-card > div.defcontainer > ul > li {
+    margin-top: 1rem;
+}
+
+div.project-card > button {
+    width: 50%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    transition: 1s;
+}
+
+div.project-card > button:hover {
+    background-color: white;
+    color: black;
+}

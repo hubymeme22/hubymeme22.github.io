@@ -1,145 +1,119 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@font-face {
+    font-family: ptmono;
+    src: url('../assets/fonts/PTMono-Regular.ttf');
+}
 
 * {
-    font-family: 'Ubuntu Mono', Consolas, monospace;
-    color: white;
+    font-family: ptmono;
+    font-size: 13pt;
 }
 
-body {
-    background-color: rgb(31, 30, 30);
-}
-
-h1, h2, h3, p.header {
-    color: black;
-    margin: 0px;
-}
+body { background-color: rgb(46, 46, 46) }
+h1 { font-size: 18pt; font-weight: bold; }
+h2 { font-size: 15pt; font-weight: bold; }
+hr { width: calc(12pt * 10); }
 
 header {
-    padding: 10px;
-    width: calc(100% - 20px);
     top: 0; left: 0;
-    position: absolute;
+    width: calc(100% - 1.6rem);
+    padding: 0.8rem;
+
     background-color: white;
+    position: fixed;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 90% 10%;
 }
 
-section {
-    margin-top: calc(1em + 30px);
+img {
+    border-radius: 50%;
+    max-height: 235px;
+    max-width: 235px;
 }
 
-button {
-    cursor: pointer;
+img.icon {
+    background-color: white;
+    padding: 0.5rem;
 }
 
-button.classic-button-style {
-    border: 2px dashed white;
+div.root {
+    display: absolute;
+    width: 100%;
+    top: 0; left: 0;
+}
+
+div.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+div.body-container {
+    padding-top: 5rem;
+    color: white;
+    width: 100%;
+}
+
+#intro, #projects {
+    text-align: center;
+}
+
+#intro > p.about {
+    max-width: 50%;
+    text-align: justify;
+    margin: auto;
+}
+
+button.next {
+    height: 4rem;
+    width: 10rem;
+    border: 1px solid white;
     background-color: transparent;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
 
-    animation: blink 2s infinite;
-    transition: 2s;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-button.classic-button-style:hover {
-    border: 2px dashed black;
+button.next:hover {
+    width: 13rem;
     background-color: white;
     color: black;
-    font-size: 1.1em;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-right: 0rem;
+    margin-left: 0rem;
 }
 
-div.infocontainer {
-    width: 95%;
-    margin-left: 5%;
-    /* background-color: white; */
-}
-
-div.infocontainer > pre {
-    font-size: 1.1em;
-}
-
-span.holder {
+button.close-menu-buttons {
+    height: 15px;
+    width: 15px;
+    border: none;
+    background-color: rgb(165, 41, 41);
+    border-radius: 50%;
     display: inline-block;
 }
 
-b.typing {
+button.minimize-menu-buttons {
+    height: 15px;
+    width: 15px;
+    border: none;
+    background-color: rgb(32, 206, 90);
+    border-radius: 50%;
     display: inline-block;
-    height: 1em;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: elongate 0.8s forwards;
 }
 
-b.term-user {
-    color: rgb(9, 181, 9);
+button.maximize-menu-buttons {
+    height: 15px;
+    width: 15px;
+    border: none;
+    background-color: rgb(228, 228, 49);
+    border-radius: 50%;
+    display: inline-block;
 }
 
-b.term-host {
-    color: rgb(187, 0, 255);
-}
-
-b.blinking {
-    height: 1em;
-    border-right: 2px solid white;
-    animation: bblink 0.5s infinite;
-}
-
-.text-center { text-align: center; }
-.yellow { color: yellow; }
-.green { color: limegreen; }
-
-#introduction {
-    text-align: center;
-    font-size: 1.1em;
-}
-
-#ascii-art {
-    width: 100%;
-    text-align: center;
-    font-size: 15pt;
-}
-
-@media only screen and (max-width: 600px) {
-    div.infocontainer {
-        width: 100%;
-        margin-left: 0%;
-    }
-    
-    div.infocontainer > pre {
-        font-size: 10pt;
-    }
-}
-
-
-/******************
-*    ANIMATIONS   *
-*******************/
-
-@keyframes blink {
-    0% {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    25% {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    100% {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-@keyframes bblink {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes elongate {
-    0% { width: 0.5em; }
-    100% { width: 3.5em; }
-}

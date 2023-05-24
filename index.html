@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" type="module" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/projectLoader.js" defer></script>
+    <script src="js/uiFlow.js" defer></script>
+    <title>Hubert - Resume</title>
 </head>
 <body>
-    <main>
+    <div class="root">
+        <!-- header part -->
         <header>
-            <p class="header">hubert-portfolio.exe - v.2.1.0</p>
+            <span>Hubert Portfolio v2.0</span>
+            <div class="button-container">
+                <button class="maximize-menu-buttons"></button>
+                <button class="minimize-menu-buttons"></button>
+                <button class="close-menu-buttons"></button>
+            </div>
         </header>
 
-        <section id="introduction">
-            <pre class="ascii-art-container" id="ascii-art"></pre>
-            <p class="text-center"><b>[ Love the Koalas (art by: Joan G. Stark) ]</b></p>
-            <p class="text-center">Hubert F. Espinola I | BSCS | Batangas State University</p>
-            <p class="text-center">Back-end Developer | Average AI and CyberSecurity Enjoyer</p>
-            <br><br>
-            <button class="classic-button-style" id="aboutme">About Me</button>
-        </section>
-
-        <section id="about-me" hidden>
-            <br>
-            <span>
-                <span class="holder"><b class="term-user">HueHueberry</b><b>@</b><b class="term-host">127.0.0.1</b><b>~#</b></span>
-                <b class="typing">whoami</b><b class="blinking"></b>
-            </span>
-            <br><br>
-
-            <div class="infocontainer">
-                <pre id="aboutmeAscii"></pre>
-                <pre id="output"></pre>
+        <!-- body part -->
+        <div class="body-container">
+            <div id="intro">
+                <img src="/assets/images/profile.jpeg"/>
+                <h1>Hubert F. Espinola I</h1>
+                <p>3rd Year BS Computer Science</p>
+                <p>Batangas State University - Alangilan Campus</p>
+                <br>
+                <p class="about">
+                    Hi! I'm Hubert F. Espinola I and I love Computer Science! My expertise are in field of Cybersecurity,
+                    Data Structures and Algorithms, back-end development--specifically API development, and a little bit of
+                    front-end development. I've started tweaking and understanding the way computer works at a very young age
+                    and first started in the field of cybersecurity then eventually fell in love with programming, mathematics,
+                    physics, and the endless potential of computing.    
+                </p>
+                <br><br>
+                <button id="redirect-project" class="next">Projects >></button>
             </div>
-        </section>
-    </main>
+
+            <!-- about me part -->
+            <div id="projects" hidden>
+                <h1>Projects</h1>
+                <hr>
+                <div id="card-holder" class="card-holder"></div>
+                <br><br>
+                <button id="redirect-intro" class="next"><< Go Back</button>
+                <button class="next">Awards >></button>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
 </body>
 </html>
