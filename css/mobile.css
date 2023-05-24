@@ -1,7 +1,5 @@
 @media only screen and (max-width: 810px) {
     #intro > p.about {
         max-width: 80%;
-        text-align: justify;
-        margin: auto;
     }
 }
